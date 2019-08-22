@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel=”stylesheet” href=”css/styles.css”> <link
+    href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Butcherman|Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Concert+One|Josefin+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <title>Bob's Impression</title>
+  <style>
+    html,
+    body {
+      background: url('bg.jpeg')center center no-repeat;
+      height: 100%;
+      background-size: cover;
+    }
+
+    #logo {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      padding-top: 20px;
+    }
+
+    #logo img {
+      margin: 0 auto !important;
+      padding-top: 20px;
+      width: 30%;
+      height: auto;
+      border-radius: 10%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    }
+
+    #intro p {
+      color: rgb(255, 255, 255);
+      text-align: center;
+      /* font-family: 'Indie Flower', cursive; */
+      /* font-family: 'Butcherman', cursive;
+      font-family: 'Josefin Sans', sans-serif; */
+      font-family: 'Concert One', cursive;
+      font-size: 1.8em;
+    }
+
+    #counter .countdown {
+      text-align: center;
+      color: ivory;
+      font-family: 'Amatic SC', cursive;
+      font-size: 3em;
+      margin: -15px 0 0;
+    }
+
+    #icons {
+      text-align: center;
+    }
+
+    #icons .fab {
+      color: white;
+      margin: 5px 15px;
+      position: relative;
+      bottom: 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    #icons #twitter:hover {
+      color: #6cadde;
+      bottom: 5px;
+    }
+
+    #icons #facebook:hover {
+      color: #3b5998;
+      bottom: 5px;
+      align-self: auto;
+      outline: #ea4335;
+    }
+
+    #icons #twitter:hover {
+      color: #6cadde;
+      bottom: 5px;
+    }
+
+    #icons #facebook:hover {
+      color: #3b5998;
+      bottom: 5px;
+    }
+
+    #icons #google:hover {
+      color: #ea4335;
+      bottom: 5px;
+    }
+
+    #icons #instagram:hover {
+      color: #517fa6;
+      bottom: 5px;
+    }
+    #icons #github:hover {
+      color: #517fa6;
+      bottom: 5px;
+    }
+
+    #signup {
+      text-align: center;
+    }
+
+    #signup .form-inline {
+      display: block;
+    }
+
+    #signup {
+      text-align: center;
+    }
+
+    #signup .form-inline {
+      display: block;
+    }
+
+    #signup .btn {
+      background-color: rgba(41, 21, 19, 0.5);
+      color: white;
+    }
+
+    #signup .btn:hover {
+      background-color: rgba(37, 165, 82, 1);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.countdown.js"></script>
+  <script>
+    $(function () {
+      $('.countdown').countdown({
+        date: "august 27, 2021 15:03:26"
+      });
+    });
+  </script>
+
+  <section id="logo">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-12 text-center">
+          <img id="picha" src="logo.jpg" class="img-fluid" />
+        </div>
+        <section id="intro">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-12">
+                <p>we're working hard, we'll be ready to launch in...</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <section id="counter">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-12">
+                <div class="countdown"></div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <section id="icons">
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-12">
+                <ul class="list-inline">
+                  <a href="http://www.twitter.com" target="blank">
+                    <li class="list-inline-item"><i id="twitter" class="fab fa-twitter" aria-hidden="true"></i>
+                    </li>
+                  </a>
+                  <a href="http://www.facebook.com" target="blank">
+                    <li class="list-inline-item"><i id="facebook" class="fab fa-facebook" aria-hidden="true"></i>
+                    </li>
+                  </a>
+                  <a href="http://www.google.com" target="blank">
+                    <li class="list-inline-item"><i id="google" class="fab fa-google-plus-g" aria-hidden="true"></i>
+                    </li>
+                  </a>
+                  <a href="http://www.instagram.com" target="blank">
+                    <li class="list-inline-item"><i id="instagram" class="fab fa-instagram" aria-hidden="true"></i></li>
+                  </a>
+                  <a href="https://github.com/bobmwangih" target="blank">
+                    <li class="list-inline-item"><i id="github" class="fab fa-github"  aria-hidden="true"></i></li>
+                  </a>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <section id="signup">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <form class="form-inline" role="form" method="post" action="#signup">
+                <input type="email" class="form-control form-control-sm" name="email" placeholder="enter your email">
+                <button type="submit" class="btn btn-signup btn-sm" name="submit" value="send">find out more</button>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+</body>
+
+</html>
